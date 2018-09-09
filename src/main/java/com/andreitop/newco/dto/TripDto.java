@@ -1,23 +1,16 @@
 package com.andreitop.newco.dto;
 
+import com.shelpablo.webcarcass.AbstractDto;
+
 import java.io.Serializable;
 
-public class TripDto implements Serializable {
+public class TripDto extends AbstractDto implements Serializable {
 
     private static final long serialVersionUID = 5914366185889783660L;
 
-    private Long id;
     private String origin;
     private String destination;
     private Integer price;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getOrigin() {
         return origin;
