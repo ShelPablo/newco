@@ -42,6 +42,7 @@ public class TripsController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public void create(@RequestBody final TripDto trip) {
+        trip.setId(Integer.valueOf(tripService.findAll().size()).longValue());
         tripService.save(trip);
     }
 

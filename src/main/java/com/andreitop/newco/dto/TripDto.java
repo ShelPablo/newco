@@ -1,11 +1,16 @@
 package com.andreitop.newco.dto;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.io.Serializable;
 
+@Entity
 public class TripDto implements Serializable {
 
     private static final long serialVersionUID = 5914366185889783660L;
 
+    @Id
     private Long id;
     private String origin;
     private String destination;
