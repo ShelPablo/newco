@@ -35,4 +35,5 @@ public class TripDto extends AbstractDto implements Serializable {
     public void setPrice(Integer price) {
         this.price = price;
     }
+
 }
